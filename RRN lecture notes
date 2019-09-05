@@ -1,0 +1,37 @@
+Sequence learning - ABC diff result from ACB
+
+Examples
+Frequestion Pattern matching
+ARIMA
+markov models
+sliding window models
+
+tanh usually used for recurrent activation function
+    exploding gradients are a very big issues for RNNs
+
+'state' of previous output fed back to neuron stored
+
+adam not usually used, rmsprop instead
+
+3-d tensor
+    how many sequences?
+    how many elements?
+    what is each?
+    
+Masking layer: 
+    instead of direct feed to NN, won't let things pass if they don't meet criteria?
+    like an intentional dropout
+    
+Almost never more than 2 or 3 hidden layers
+
+LSTM
+Issue with RNNs - vanishing gradient
+    short term memory is not long enough
+    
+Logic gates
+    forget gate - what to keep and throw away
+    input gate - updates cell state but not output
+    output gate - what goes to cell state vs. output
+    
+Gated recurring units
+
