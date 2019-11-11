@@ -38,15 +38,14 @@ And the growth of the working population on disability
 
 And bringing all this together, we develop our new employment metric, which you can see here against the current U3 metric reported by the US government.
 
-*Employment metric*
+#### Employment metric*
 ![new_employment_metric](readme_images/new_employment_metric.png)
 
-*U3 metric*
+#### U3 metric
 ![u3_metric](readme_images/u3_metric.png)
 
 We first use a typical SARIMA system to create a predictive model for where employment will be going in the next 4 years. The results can be seen below, with a RMSE of .89 percentage points across the 4 year prediction.
 
-*Sarima model prediction against actual*
 ![sarima_model](readme_images/sarima_model.png)
 
 With the advent of neural networks, I wanted to try and create something better than the typical SARIMA model, so I implemented an encoder-decoder version of an LSTM neural network, looking to predict the employment in America to a greater degree than a model  based on trend and seasonality. My hypothesis is that the LSTM network will be able to pick up on interactions between the various metrics that the SARIMA model can't recreate, and the LSTM model has the added benefit of being able to predict the movement of all the industries and age groups (and their contribution towards the tax dollars of the workforce) within one model.
