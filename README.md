@@ -51,11 +51,9 @@ We first use a typical SARIMA system to create a predictive model for where empl
 
 With the advent of neural networks, I wanted to try and create something better than the typical SARIMA model, so I implemented an encoder-decoder version of an LSTM neural network, looking to predict the employment in America to a greater degree than a model  based on trend and seasonality. My hypothesis is that the LSTM network will be able to pick up on interactions between the various metrics that the SARIMA model can't recreate, and the LSTM model has the added benefit of being able to predict the movement of all the industries and age groups (and their contribution towards the tax dollars of the workforce) within one model.
 
-*LSTM new employment*
 ![lstm_new_employment_rmse](readme_images/lstm_new_employment_rmse.png)
 ![lstm_new_employment](readme_images/lstm_new_employment.png)
 
-*LSTM other metrics*
 ![lstm_20-24](readme_images/lstm_20-24.png)
 
 ![lstm_25-34](readme_images/lstm_25-34.png)
